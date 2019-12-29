@@ -11,13 +11,10 @@ class _timelineRouteState extends State<timelineRoute> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: new Center(
-        child: new Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Text("TimeLine!"),
-          ],
-        )
+      body: new Column(
+        children: <Widget>[
+          Text("Main")
+        ],
       )
     );
   }

@@ -17,7 +17,7 @@ class mainWidget extends StatelessWidget {
       theme: new ThemeData(
         primarySwatch: Colors.lightBlue,
       ),
-      home: new mainHome(title: 'Strings.applicationTitle'),
+      home: new mainHome(title: Strings.applicationTitle),
     );
   }
 }

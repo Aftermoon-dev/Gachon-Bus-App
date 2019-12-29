@@ -11,13 +11,9 @@ class _timetableRouteState extends State<timetableRoute> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body: new Center(
-            child: new Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: <Widget>[
-                Text("TimeTable!"),
-              ],
-            )
+        body: new SingleChildScrollView(
+          padding: EdgeInsets.only(top: 12, left: 12, right: 12),
+         child: null,
         )
     );
   }

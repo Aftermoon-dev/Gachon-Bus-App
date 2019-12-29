@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
+import 'package:gachonbus/Strings.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class infoRoute extends StatefulWidget {
@@ -18,9 +19,9 @@ class _infoRouteState extends State<infoRoute> {
           children: <Widget>[
             ListTile(
               leading: Icon(Icons.info),
-              title: Text("개발자 정보"),
-              subtitle: Text("개발자 정보를 확인합니다."),
-              onTap: () => _launchURL("https://github.com/gachonswdm"),
+              title: Text(Strings.developerInfoTitle),
+              subtitle: Text(Strings.developerInfoSubTitle),
+              onTap: () => launch("https://github.com/gachonswdm"),
             ),
             ListTile(
               leading: Icon(Icons.thumbs_up_down),
@@ -34,13 +35,5 @@ class _infoRouteState extends State<infoRoute> {
         )
       )
     );
-  }
-  _launchURL(String url) async {
-    if (await canLaunch(url)) {
-      await launch(url);
-    }
-    else {
-      throw 'Can\'t Launch URL - $url';
-    }
   }
 }
